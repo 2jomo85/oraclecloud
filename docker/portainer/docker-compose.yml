@@ -1,0 +1,20 @@
+# https://hub.docker.com/r/portainer/portainer-ce
+
+version: "3"
+services:
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    restart: always
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "~/docker_service/portainer/volume/data:/data"
+# Do not need to open ports if container use same docker network with NPM
+#    ports:
+#      - '9000:9000'        # admin page
+
+# Use same docker network with Nginx Proxy Manager
+networks:
+  default:
+    external:
+      name: nginx-proxy-manager
