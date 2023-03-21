@@ -63,13 +63,13 @@
      - Websockets Supports: <span style="color: red">Check</span><br>
        ![7.2](./images/2023-03-21-13-27-16.png)
 
-   - [SSL] 탭  
-      _ SSL Certificate: <span style="color: red">Request a new SSL Certificate</span> 선택
-     _ Force SSL: <span style="color: red">Check</span>
-     _ HTTP/2 Support: <span style="color: red">Check</span>
-     _ HSTS Enabled: <span style="color: red">Check</span>
-     _ HSTS Subdomains: <span style="color: red">Check</span>
-     _ I Agree to the Let's Encrypt Terms of Service\*: <span style="color: red">Check</span>
+   - [SSL] 탭
+     - SSL Certificate: <span style="color: red">Request a new SSL Certificate</span> 선택
+     - Force SSL: <span style="color: red">Check</span>
+     - HTTP/2 Support: <span style="color: red">Check</span>
+     - HSTS Enabled: <span style="color: red">Check</span>
+     - HSTS Subdomains: <span style="color: red">Check</span>
+     - I Agree to the Let's Encrypt Terms of Service\*: <span style="color: red">Check</span>
      - [Save]<br>
        ![7.3](./images/2023-03-21-13-32-15.png)
        <br>
