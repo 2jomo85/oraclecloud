@@ -1,5 +1,3 @@
-### 1. 컨테이너 볼륨 디렉토리 생성
-
 1. Proxy Host 등록을 위해 IP 대신 DDNS 적용
    - duckdns: <https://www.duckdns.org> 접속
    - Sign in with Goole -> 구글 계정을 통해서 Duck DNS 로그인
@@ -62,7 +60,7 @@
      - Foward Port: "<span style="color: red">81</span>"
      - Cash Assets: <span style="color: red">Check</span>
      - Block Common Exploits: <span style="color: red">Check</span>
-     - Websockets Supports: <span style="color: red">Check</span>
+     - Websockets Supports: <span style="color: red">Check</span><br>
        ![7.2](./images/2023-03-21-13-27-16.png)
 
    - [SSL] 탭  
@@ -71,11 +69,11 @@
      _ HTTP/2 Support: <span style="color: red">Check</span>
      _ HSTS Enabled: <span style="color: red">Check</span>
      _ HSTS Subdomains: <span style="color: red">Check</span>
-     _ I Agree to the Let's Encrypt Terms of Service*: <span style="color: red">Check</span>
-     * [Save]
-     ![7.3](./images/2023-03-21-13-32-15.png)
-     <br><br>
-     > Prox Host 등록 후 https://nginx.XXXX.duckdns.org 접속 확인
+     _ I Agree to the Let's Encrypt Terms of Service\*: <span style="color: red">Check</span>
+     - [Save]<br>
+       ![7.3](./images/2023-03-21-13-32-15.png)
+       <br>
+       > Prox Host 등록 후 https://nginx.XXXX.duckdns.org 접속 확인
 
 8. admin panel 접속을 위해 오픈했던 81 포트 제거
    - START -> [메뉴] -> [컴퓨트] -> [인스턴스] -> "instance" 선택
