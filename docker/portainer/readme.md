@@ -43,14 +43,15 @@ sudo docker-compose ps
   - Websockets Supports: <span style="color: red">Check</span><br>
     <br/>![4.1](./images/2023-03-21-14-53-02.png)
 - [SSL] 탭
-  _ SSL Certificate: "Ruquest a new SSL Certificate" 선택
-  _ Force SSL: <span style="color: red">Check</span>
-  _ HTTP/2 Support: <span style="color: red">Check</span>
-  _ HSTS Enabled: <span style="color: red">Check</span>
-  _ HSTS Subdomains: <span style="color: red">Check</span>
-  _ I Agree to the Let's Encript Terms of Service: <span style="color: red">Check</span> \* [Save]
-  <br/>![4.2](./images/2023-03-21-14-56-56.png)
-  > Proxy Host 등록 후 -> https://portainer.XXXX.duckdns.org 접속 확인
+  - SSL Certificate: "Ruquest a new SSL Certificate" 선택
+  - Force SSL: <span style="color: red">Check</span>
+  - HTTP/2 Support: <span style="color: red">Check</span>
+  - HSTS Enabled: <span style="color: red">Check</span>
+  - HSTS Subdomains: <span style="color: red">Check</span>
+  - I Agree to the Let's Encript Terms of Service: <span style="color: red">Check</span>
+  - [Save]<br/>
+    <br/>![4.2](./images/2023-03-21-14-56-56.png)
+    > Proxy Host 등록 후 -> https://portainer.XXXX.duckdns.org 접속 확인
 
 ### 5. Portainer 관리자 계정 등록
 
