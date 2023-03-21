@@ -1,0 +1,29 @@
+# https://github.com/NginxProxyManager/nginx-proxy-manager
+# admin : http://jomo85.duckdns.org:81
+# ID : admin@example.com
+# PW : changeme
+
+version: "3.3"
+services:
+  nginx-proxy-manager:
+    image: jc21/nginx-proxy-manager:latest
+    container_name: npm_jc21
+    restart: always
+    ports:
+      - 80:80 # HTTP
+      - 443:443 # HTTPS
+      - 81:81 # admin panel
+    volumes:
+      - ./volume/config.json:/app/config/production.json
+      - ./volume/data:/data
+      - ./volume/letsencrypt:/etc/letsencrypt
+    environment:
+      - PUID=<UID>
+      - PGID=<GID>
+      - TZ=Asia/Seoul
+
+# Use same docker network with Nginx Proxy Manager
+networks:
+  default:
+    external:
+      name: nginx-proxy-manager
