@@ -3,6 +3,8 @@ services:
   postgres:
     container_name: postgres
     image: "postgres:15.2-bullseye"
+    #command: "postgres -c config_file=/etc/postgresql/postgresql.conf"
+    restart: always
     volumes:
       - ./volume/data:/var/lib/postgresql/data
         #    ports:
