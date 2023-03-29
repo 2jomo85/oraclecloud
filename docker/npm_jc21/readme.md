@@ -56,7 +56,7 @@
 
      - Domain Names : <span style="color: red">nginx</span>.XXXX.duckdns.org
      - Scheme: <span style="color: red">"http"</span> 선택(기본값)
-     - Foward Hostname /IP : "<span style="color: red">nginx-proxy-manager</span>"<span style="color: blue">(docker-compose.yml 의 nginx-prox-manager: 매칭)</span>
+     - Foward Hostname /IP : "<span style="color: red">nginx-proxy-manager</span>"<span style="color: blue">(docker-compose.yml 의 nginx-proxy-manager: 매칭)</span>
      - Foward Port: "<span style="color: red">81</span>"
      - Cash Assets: <span style="color: red">Check</span>
      - Block Common Exploits: <span style="color: red">Check</span>
