@@ -1,0 +1,36 @@
+version: "3.8"
+services:
+  postgres:
+    container_name: postgres
+    image: "postgres:15.2-bullseye"
+    volumes:
+      - ./volume/data:/var/lib/postgresql/data
+        #    ports:
+        #      - 5432:5432
+    environment:
+      - POSTGRES_USER=${DB_USER_ID}
+      - POSTGRES_PASSWORD=${DB_USER_PASSWORD}
+      - TZ=Asia/Seoul
+
+  pgadmin:
+    container_name: pgadmin
+    image:
+      dpage/pgadmin4
+      #    ports:
+      #      - 8088:80
+    environment:
+      #address:8088 인덱스페이지 로그인
+      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
+      #address:8088 인덱스페이지 로그인
+      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
+      - TZ=Asia/Seoul
+    volumes:
+      - ./volume/pgadmin/data:/var/lib/pgadmin
+    depends_on:
+      - postgres
+
+# Use same docker network with Nginx Proxy Manager
+networks:
+  default:
+    external:
+      name: nginx-proxy-manager
